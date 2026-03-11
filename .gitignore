@@ -158,10 +158,10 @@ docker-compose.override.yaml
 .notice/
 .notice-work/
 .aider*
-.env
 
 **/CLAUDE.local.md
 **/CLAUDE.md
 AGENTS.md
 .cursorrules
 .cursor/
+config.bat
