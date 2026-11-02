@@ -36,10 +36,10 @@
     }
   },
   "scripts": {
-    "build": "tsc --build tsconfig.build.json --verbose",
+    "build": "node init && tsc --build tsconfig.build.json --verbose",
     "check": "eslint ./src eslint.config.mjs --quiet",
     "fix": "eslint ./src eslint.config.mjs --quiet --fix",
-    "run": "tsc --watch --preserveWatchOutput",
+    "run": "node init && tsc --watch --preserveWatchOutput",
     "test": "jest",
     "test-ci": "jest --ci --forceExit --detectOpenHandles --maxWorkers=100% --logHeapUsage",
     "clean": "rm -rf lib node_modules *.tsbuildinfo"

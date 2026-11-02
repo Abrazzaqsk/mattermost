@@ -39,10 +39,10 @@
     }
   },
   "scripts": {
-    "build": "tsc --build --verbose",
+    "build": "node init && tsc --build --verbose",
     "check": "eslint ./src eslint.config.mjs --quiet",
     "fix": "eslint ./src eslint.config.mjs --quiet --fix",
-    "run": "tsc --watch --preserveWatchOutput",
+    "run": "node init && tsc --watch --preserveWatchOutput",
     "clean": "rm -rf lib node_modules *.tsbuildinfo"
   }
 }

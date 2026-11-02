@@ -115,7 +115,6 @@ Session.vim
 *~
 
 # VSCode project files
-.vscode
 *.code-workspace
 
 # Gogland project files
@@ -163,7 +162,6 @@ docker-compose.override.yaml
 .notice/
 .notice-work/
 .aider*
-.env
 .envrc
 .planning/
 
@@ -217,3 +215,4 @@ server/docs/*.pdf
 server/docs/*.md
 server/data_dest/
 server/import/
+config.bat

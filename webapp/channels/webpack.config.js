@@ -541,4 +541,3 @@ if (targetIsEsLint) {
 
         return config;
     };
-}
