@@ -5,8 +5,8 @@
   ],
   "scripts": {
     "postinstall": "script/post_install.sh && npm run build",
-    "build": "npm run build --workspaces",
-    "build:watch": "npm run build:watch --workspaces",
+    "build": "node init && npm run build --workspaces",
+    "build:watch": "node init && npm run build:watch --workspaces",
     "tsc": "npm run tsc --workspaces && tsc -b",
     "lint": "eslint .",
     "lint:test-docs": "node script/lint-test-docs.js",
@@ -32,7 +32,7 @@
     "codegen": "npm run build && cross-env playwright codegen $PW_BASE_URL",
     "playwright-ui": "npm run build && cross-env playwright test --ui",
     "show-report": "npm run build && npx playwright show-report results/reporter",
-    "start:libretranslate-mock": "node mock_libre_translate.js",
+    "start:libretranslate-mock": "node init && node mock_libre_translate.js",
     "clean": "rm -rf dist node_modules package-lock.json *.tsbuildinfo logs results storage_state test-results .mattermost_data && npm run clean --workspaces"
   },
   "dependencies": {
